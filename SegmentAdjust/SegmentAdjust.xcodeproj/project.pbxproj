@@ -14,6 +14,11 @@
 		E3689B5F1D9E727D004620D6 /* SEGAdjustIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689B5E1D9E727D004620D6 /* SEGAdjustIntegration.swift */; };
 		E3689B631D9E7415004620D6 /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3689B611D9E7415004620D6 /* AdjustSdk.framework */; };
 		E3689B641D9E7415004620D6 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3689B621D9E7415004620D6 /* Analytics.framework */; };
+		E3689B681D9E9840004620D6 /* SEGAdjustIntegrationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689B5C1D9E7197004620D6 /* SEGAdjustIntegrationFactory.swift */; };
+		E3689B691D9E9840004620D6 /* SEGAdjustIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689B5E1D9E727D004620D6 /* SEGAdjustIntegration.swift */; };
+		E3689B6B1D9E9840004620D6 /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3689B611D9E7415004620D6 /* AdjustSdk.framework */; };
+		E3689B6C1D9E9840004620D6 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3689B621D9E7415004620D6 /* Analytics.framework */; };
+		E3689B6E1D9E9840004620D6 /* SegmentAdjust.h in Headers */ = {isa = PBXBuildFile; fileRef = E3689B451D9E703D004620D6 /* SegmentAdjust.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,8 @@
 		E3689B5E1D9E727D004620D6 /* SEGAdjustIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEGAdjustIntegration.swift; sourceTree = "<group>"; };
 		E3689B611D9E7415004620D6 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdjustSdk.framework; path = ../../Carthage/Build/iOS/AdjustSdk.framework; sourceTree = "<group>"; };
 		E3689B621D9E7415004620D6 /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Analytics.framework; path = ../../Carthage/Build/iOS/Analytics.framework; sourceTree = "<group>"; };
+		E3689B741D9E9840004620D6 /* SegmentAdjust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SegmentAdjust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3689B751D9E9841004620D6 /* SegmentAdjust copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SegmentAdjust copy-Info.plist"; path = "/Users/Nodes/Documents/Nodes-Projects/segment-adjust/SegmentAdjust/SegmentAdjust copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3689B6A1D9E9840004620D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3689B6B1D9E9840004620D6 /* AdjustSdk.framework in Frameworks */,
+				E3689B6C1D9E9840004620D6 /* Analytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +82,7 @@
 				E3689B441D9E703D004620D6 /* SegmentAdjust */,
 				E3689B4F1D9E703D004620D6 /* SegmentAdjustTests */,
 				E3689B431D9E703D004620D6 /* Products */,
+				E3689B751D9E9841004620D6 /* SegmentAdjust copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +91,7 @@
 			children = (
 				E3689B421D9E703D004620D6 /* SegmentAdjust.framework */,
 				E3689B4B1D9E703D004620D6 /* SegmentAdjustTests.xctest */,
+				E3689B741D9E9840004620D6 /* SegmentAdjust.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +137,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3689B6D1D9E9840004620D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3689B6E1D9E9840004620D6 /* SegmentAdjust.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +185,25 @@
 			productReference = E3689B4B1D9E703D004620D6 /* SegmentAdjustTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E3689B661D9E9840004620D6 /* SegmentAdjust-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3689B711D9E9840004620D6 /* Build configuration list for PBXNativeTarget "SegmentAdjust-tvOS" */;
+			buildPhases = (
+				E3689B671D9E9840004620D6 /* Sources */,
+				E3689B6A1D9E9840004620D6 /* Frameworks */,
+				E3689B6D1D9E9840004620D6 /* Headers */,
+				E3689B6F1D9E9840004620D6 /* Resources */,
+				E3689B701D9E9840004620D6 /* Carthage fix */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SegmentAdjust-tvOS";
+			productName = SegmentAdjust;
+			productReference = E3689B741D9E9840004620D6 /* SegmentAdjust.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +225,9 @@
 						DevelopmentTeam = HW27H6H98R;
 						ProvisioningStyle = Automatic;
 					};
+					E3689B661D9E9840004620D6 = {
+						DevelopmentTeam = HW27H6H98R;
+					};
 				};
 			};
 			buildConfigurationList = E3689B3C1D9E703D004620D6 /* Build configuration list for PBXProject "SegmentAdjust" */;
@@ -196,6 +244,7 @@
 			targets = (
 				E3689B411D9E703D004620D6 /* SegmentAdjust */,
 				E3689B4A1D9E703D004620D6 /* SegmentAdjustTests */,
+				E3689B661D9E9840004620D6 /* SegmentAdjust-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -215,10 +264,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3689B6F1D9E9840004620D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		E3689B651D9E7421004620D6 /* Carthage fix */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Analytics.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/AdjustSdk.framework",
+			);
+			name = "Carthage fix";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E3689B701D9E9840004620D6 /* Carthage fix */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,6 +323,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3689B511D9E703D004620D6 /* SegmentAdjustTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3689B671D9E9840004620D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3689B681D9E9840004620D6 /* SEGAdjustIntegrationFactory.swift in Sources */,
+				E3689B691D9E9840004620D6 /* SEGAdjustIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,14 +455,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/**";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = SegmentAdjust/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nodes.SegmentAdjust;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SegmentAdjust;
+				PRODUCT_NAME = SegmentAdjust;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -397,14 +479,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/**";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = SegmentAdjust/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nodes.SegmentAdjust;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SegmentAdjust;
+				PRODUCT_NAME = SegmentAdjust;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -435,6 +518,53 @@
 			};
 			name = Release;
 		};
+		E3689B721D9E9840004620D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HW27H6H98R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/tvOS";
+				INFOPLIST_FILE = "SegmentAdjust copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SegmentAdjust;
+				PRODUCT_NAME = SegmentAdjust;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E3689B731D9E9840004620D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HW27H6H98R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/tvOS";
+				INFOPLIST_FILE = "SegmentAdjust copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SegmentAdjust;
+				PRODUCT_NAME = SegmentAdjust;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +591,15 @@
 			buildConfigurations = (
 				E3689B5A1D9E703D004620D6 /* Debug */,
 				E3689B5B1D9E703D004620D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3689B711D9E9840004620D6 /* Build configuration list for PBXNativeTarget "SegmentAdjust-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3689B721D9E9840004620D6 /* Debug */,
+				E3689B731D9E9840004620D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
